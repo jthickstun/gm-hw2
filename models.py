@@ -28,7 +28,7 @@ class ConvnetBlock(nn.Module):
         #             Use a kernel size of 3. Do not implement 1x1 convolutions.
         #
  
-        pass
+        raise NotImplementedError
 
 class MaskedConvnetBlock(nn.Module):
     def __init__(self, filters, *args, **kwargs):
@@ -43,7 +43,7 @@ class MaskedConvnetBlock(nn.Module):
         #             You'll want to use mask-type B.
         #
  
-        pass
+        raise NotImplementedError
 
 class PixelCNN(nn.Module):
     def __init__(self, capacity=32, depth=9, *args, **kwargs):
@@ -194,7 +194,7 @@ class VAEEncoder(nn.Module):
             #             While calculating z, accumulate a calculation of its probability.
             #
 
-            pass
+            raise NotImplementedError
 
         return z.view(-1,49), logqzx, mu.view(-1,49), logvar.view(-1,49)
 
