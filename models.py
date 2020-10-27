@@ -190,7 +190,7 @@ class VAEEncoder(nn.Module):
  
         for t, flow in enumerate(self.flows):
             #
-            # Problem 6a: Calculate an inverse autoregressive flow z.
+            # Problem 6d: Calculate an inverse autoregressive flow z.
             #             While calculating z, accumulate a calculation of its probability.
             #
 
